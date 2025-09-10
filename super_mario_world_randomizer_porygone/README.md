@@ -4,9 +4,7 @@ An PopTracker pack with map for\
 [the Super Mario World Archipelago Randomizer](https://github.com/PoryGone)
 
 ## Requirements
-[PopTracker](https://github.com/black-sliver/PopTracker) (Recommended)
-or
-[EmoTracker](https://emotracker.net/)
+[PopTracker](https://github.com/black-sliver/PopTracker)
 
 ## Installation
 

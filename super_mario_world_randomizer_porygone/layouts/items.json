@@ -35,7 +35,8 @@
                         "boss_tokens",
                         "yoshi_eggs",
                         "bosses_required",
-                        "yoshi_eggs_required"
+                        "yoshi_eggs_required",
+                        "show_all_levels"
                     ],
                     [
                         "dragon_coin_checks",

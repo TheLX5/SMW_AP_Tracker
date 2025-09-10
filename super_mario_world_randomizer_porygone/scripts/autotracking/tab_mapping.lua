@@ -151,8 +151,8 @@ TAB_MAPPING = {
 	[0x1E8] = "Forest of Illusion/Forest Ghost House/Main room",
 	[0x1E9] = "Forest of Illusion/Forest Ghost House/Main room",
 	[0x1FA] = "Forest of Illusion/Forest Ghost House/Ghost ceiling room",
-	[0x1E7] = "Forest of Illusion/Forest Ghost House/Normal goal room",
-	[0x1E6] = "Forest of Illusion/Forest Ghost House/Secret goal room",
+	[0x1E6] = "Forest of Illusion/Forest Ghost House/Normal goal room",
+	[0x1E7] = "Forest of Illusion/Forest Ghost House/Secret goal room",
 
 	[0x122] = "Forest of Illusion/Forest Secret Area/Main room",
 

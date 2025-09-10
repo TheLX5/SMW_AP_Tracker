@@ -40,6 +40,14 @@ function onClear(slot_data)
             end
         end
     end
+    for room_id, v in pairs(TAB_MAPPING) do
+        if room_id then
+            local obj = Tracker:FindObjectForCode("level_visit_" .. room_id)
+            if obj then
+                obj.AcquiredCount = 0
+            end
+        end
+    end
 
     for _, location_array in pairs(LOCATION_MAPPING) do
         for _, location in pairs(location_array) do
@@ -56,8 +64,8 @@ function onClear(slot_data)
         end
     end
 
-	PLAYER_ID = Archipelago.PlayerNumber or -1
-	TEAM_NUMBER = Archipelago.TeamNumber or 0
+    PLAYER_ID = Archipelago.PlayerNumber or -1
+    TEAM_NUMBER = Archipelago.TeamNumber or 0
 
     if SLOT_DATA == nil then
         return
@@ -84,15 +92,21 @@ function onClear(slot_data)
         blocksanity.Active = (slot_data['blocksanity'] ~= 0)
     end
 
-	if Archipelago.PlayerNumber>-1 then
-		EVENT_ID="smw_curlevelid_"..TEAM_NUMBER.."_"..PLAYER_ID
+    if Archipelago.PlayerNumber>-1 then
+        EVENT_ID="smw_curlevelid_"..TEAM_NUMBER.."_"..PLAYER_ID
         print(string.format("SET NOTIFY %s",EVENT_ID))
-		Archipelago:SetNotify({EVENT_ID})
-		Archipelago:Get({EVENT_ID})
-	end
+        Archipelago:SetNotify({EVENT_ID})
+        Archipelago:Get({EVENT_ID})
 
-	--Default tab switching to on
-	Tracker:FindObjectForCode("tab_switch").Active = 1
+        EVENT_ID="smw_visitedlevels_"..TEAM_NUMBER.."_"..PLAYER_ID
+        print(string.format("SET NOTIFY %s",EVENT_ID))
+        Archipelago:SetNotify({EVENT_ID})
+        Archipelago:Get({EVENT_ID})
+    end
+
+    --Default tab switching to on
+    Tracker:FindObjectForCode("tab_switch").Active = 1
+    Tracker:FindObjectForCode("show_all_levels").Active = 0
 end
 
 function onItem(index, item_id, item_name, player_number)
@@ -147,33 +161,45 @@ function onLocation(location_id, location_name)
 end
 
 function onNotify(key, value, old_value)
-	updateEvents(value)
+    updateEvents(key, value)
 end
 
 function onNotifyLaunch(key, value)
-	updateEvents(value)
+    updateEvents(key, value)
 end
 
-function updateEvents(value)
-	if value ~= nil then
-	    print(string.format("updateEvents %x",value))
-		local tabswitch = Tracker:FindObjectForCode("tab_switch")
-		Tracker:FindObjectForCode("cur_level_id").CurrentStage = value
-		if tabswitch.Active then
-			if TAB_MAPPING[value] then
-				CURRENT_ROOM = TAB_MAPPING[value]
-                for str in string.gmatch(CURRENT_ROOM, "([^/]+)") do
-				    print(string.format("Updating ID %x to Tab %s",value,str))
-                    Tracker:UiHint("ActivateTab", str)
+function updateEvents(key, value)
+    print(key)
+    if value ~= nil then
+        if string.find(key, "smw_curlevelid_") then
+            print(string.format("updateEvents %x",value))
+            local tabswitch = Tracker:FindObjectForCode("tab_switch")
+            Tracker:FindObjectForCode("cur_level_id").CurrentStage = value
+            if tabswitch.Active then
+                if TAB_MAPPING[value] then
+                    CURRENT_ROOM = TAB_MAPPING[value]
+                    for str in string.gmatch(CURRENT_ROOM, "([^/]+)") do
+                        print(string.format("Updating ID %x to Tab %s",value,str))
+                        Tracker:UiHint("ActivateTab", str)
+                    end
+                    print(string.format("Updating ID %x to Tab %s",value,CURRENT_ROOM))
+                else
+                    --CURRENT_ROOM = TAB_MAPPING[0x00]
+                    print(string.format("Failed to find ID %x",value))
+                    --Tracker:UiHint("ActivateTab", CURRENT_ROOM)
                 end
-				print(string.format("Updating ID %x to Tab %s",value,CURRENT_ROOM))
-			else
-				--CURRENT_ROOM = TAB_MAPPING[0x00]
-				print(string.format("Failed to find ID %x",value))
-                --Tracker:UiHint("ActivateTab", CURRENT_ROOM)
-			end
-		end
-	end
+            end
+        elseif string.find(key, "smw_visitedlevels_") then
+            --print(string.format("updateEvents %x",value))
+            for _, level_id in ipairs(value) do
+                level_visit = Tracker:FindObjectForCode("level_visit_" .. level_id)
+                if level_visit ~= nil and not level_visit.Active then
+                    level_visit.Active = 1
+                    print("Setting level_visit_" .. level_id)
+                end
+            end
+        end
+    end
 end
 
 

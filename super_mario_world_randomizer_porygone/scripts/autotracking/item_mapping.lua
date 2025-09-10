@@ -27,5 +27,6 @@ SETTINGS_MAPPING = {
     [0xBC0F05] = {"hidden_1up_checks", "toggle"},
     [0xBC0F06] = {"bonus_block_checks", "toggle"},
     [0xBC0F07] = {"blocksanity", "toggle"},
-    [0xBC0F08] = {"blocksanity", "tab_switch"},
+    [0xBC0F08] = {"tab_switch", "toggle"},
+    [0xBC0F09] = {"show_all_levels", "toggle"},
 }

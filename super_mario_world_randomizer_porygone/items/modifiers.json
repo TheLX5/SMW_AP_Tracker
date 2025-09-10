@@ -72,10 +72,529 @@
         "codes": "tab_switch"
     },
     {
+        "name": "Show All Levels",
+        "type": "toggle",
+        "img": "images/checks/goal_sphere.png",
+        "disabled_img": "images/checks/goal_sphere.png",
+        "codes": "show_all_levels"
+    },
+    {
         "name": "Current Level",
         "type": "progressive",
         "img": "",
         "disabled_img": "",
         "codes": "cur_level_id"
+    },
+
+    {
+        "name": "Visited YI1",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_261"
+    },
+    {
+        "name": "Visited YI2",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_262"
+    },
+    {
+        "name": "Visited YI3",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_259"
+    },
+    {
+        "name": "Visited YI4",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_258"
+    },
+    {
+        "name": "Visited C1",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_257"
+    },
+    {
+        "name": "Visited YSP",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_20"
+    },
+
+    {
+        "name": "Visited DP1",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_21"
+    },
+    {
+        "name": "Visited DP2",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_9"
+    },
+    {
+        "name": "Visited DP3",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_5"
+    },
+    {
+        "name": "Visited DP4",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_6"
+    },
+    {
+        "name": "Visited C2",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_7"
+    },
+    {
+        "name": "Visited DGH",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_4"
+    },
+    {
+        "name": "Visited DS1",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_10"
+    },
+    {
+        "name": "Visited DS2",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_267"
+    },
+    {
+        "name": "Visited DSH",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_19"
+    },
+    {
+        "name": "Visited GSP",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_8"
+    },
+
+    {
+        "name": "Visited VD1",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_282"
+    },
+    {
+        "name": "Visited VD2",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_280"
+    },
+    {
+        "name": "Visited VD3",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_266"
+    },
+    {
+        "name": "Visited VD4",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_281"
+    },
+    {
+        "name": "Visited C3",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_284"
+    },
+    {
+        "name": "Visited VDF",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_11"
+    },
+    {
+        "name": "Visited VDGH",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_263"
+    },
+    {
+        "name": "Visited VS1",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_265"
+    },
+    {
+        "name": "Visited VS2",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_1"
+    },
+    {
+        "name": "Visited VS3",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_2"
+    },
+    {
+        "name": "Visited RSP",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_283"
+    },
+
+    {
+        "name": "Visited BB1",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_12"
+    },
+    {
+        "name": "Visited BB2",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_13"
+    },
+    {
+        "name": "Visited CBA",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_15"
+    },
+    {
+        "name": "Visited CM",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_16"
+    },
+    {
+        "name": "Visited C4",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_14"
+    },
+    {
+        "name": "Visited SD",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_17"
+    },
+    {
+        "name": "Visited FoI1",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_286"
+    },
+    {
+        "name": "Visited FoI2",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_288"
+    },
+    {
+        "name": "Visited FoI3",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_291"
+    },
+    {
+        "name": "Visited FoI4",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_287"
+    },
+    {
+        "name": "Visited C5",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_32"
+    },
+    {
+        "name": "Visited FoIF",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_31"
+    },
+    {
+        "name": "Visited FoIGH",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_285"
+    },
+    {
+        "name": "Visited FoIS",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_290"
+    },
+    {
+        "name": "Visited BSP",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_289"
+    },
+
+    {
+        "name": "Visited CI1",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_34"
+    },
+    {
+        "name": "Visited CI2",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_36"
+    },
+    {
+        "name": "Visited CI3",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_35"
+    },
+    {
+        "name": "Visited CI4",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_29"
+    },
+    {
+        "name": "Visited CI5",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_28"
+    },
+    {
+        "name": "Visited C6",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_26"
+    },
+    {
+        "name": "Visited CIF",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_27"
+    },
+    {
+        "name": "Visited CIGH",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_33"
+    },
+    {
+        "name": "Visited CIS",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_279"
+    },
+    {
+        "name": "Visited SGS",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_24"
+    },
+
+    {
+        "name": "Visited VoB1",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_278"
+    },
+    {
+        "name": "Visited VoB2",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_277"
+    },
+    {
+        "name": "Visited VoB3",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_275"
+    },
+    {
+        "name": "Visited VoB4",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_271"
+    },
+    {
+        "name": "Visited C7",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_272"
+    },
+    {
+        "name": "Visited VoBF",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_273"
+    },
+    {
+        "name": "Visited VoBGH",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_276"
+    },
+
+    {
+        "name": "Visited SR1",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_308"
+    },
+    {
+        "name": "Visited SR2",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_304"
+    },
+    {
+        "name": "Visited SR3",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_306"
+    },
+    {
+        "name": "Visited SR4",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_309"
+    },
+    {
+        "name": "Visited SR5",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_310"
+    },
+
+    {
+        "name": "Visited SP1",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_298"
+    },
+    {
+        "name": "Visited SP2",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_299"
+    },
+    {
+        "name": "Visited SP3",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_300"
+    },
+    {
+        "name": "Visited SP4",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_301"
+    },
+    {
+        "name": "Visited SP5",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_296"
+    },
+    {
+        "name": "Visited SP6",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_295"
+    },
+    {
+        "name": "Visited SP7",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_294"
+    },
+    {
+        "name": "Visited SP8",
+        "type": "toggle",
+        "img": "",
+        "disabled_img": "",
+        "codes": "level_visit_293"
     }
 ]
