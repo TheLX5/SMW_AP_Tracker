@@ -88,9 +88,7 @@
                         ],
                         "name": "Hidden 1-Up",
                         "access_rules": [
-                            "swim",
-                            "yoshi",
-                            "powerup_3, run"
+                            "swim"
                         ],
                         "chest_unopened_img": "images/checks/hidden_disabled.png",
                         "chest_opened_img": "images/checks/hidden.png",
@@ -352,12 +350,8 @@
                     {
                         "name": "1-Up Mushroom Block #1",
                         "access_rules": [
-                            "climb",
-                            "swim",
-                            "[climb], yoshi",
-                            "[swim], yoshi",
-                            "[climb], powerup_3, run",
-                            "[swim], powerup_3, run"
+                            "yoshi",
+                            "climb"
                         ],
                         "visibility_rules": [
                             "blocksanity"
