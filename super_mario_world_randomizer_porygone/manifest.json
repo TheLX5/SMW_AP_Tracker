@@ -1,9 +1,9 @@
 ﻿{
-    "name": "Super Mario World - Archipelago Tracker",
-    "game_name": "Super Mario World",
+    "name": "Spicy Mycena Waffles - Archipelago Tracker",
+    "game_name": "Spicy Mycena Waffles",
     "platform": "Super Nintendo Entertainment System",
-    "package_version": "2.2.1",
-    "package_uid": "super_mario_world_randomizer_porygone",
+    "package_version": "1.0.0",
+    "package_uid": "waffles_randomizer",
     "author": "PoryGone, lx5",
     "variants": {
         "itemrando": {
